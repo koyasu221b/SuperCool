@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var helloLogo: UIImageView!
+    @IBOutlet weak var helloBg: UIImageView!
+    @IBOutlet weak var onHelloButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func makeMeSuperCool(_ sender: Any) {
+        helloLogo.isHidden = false;
+        helloBg.isHidden = false;
+        onHelloButton.isHidden = true;
+    }
 
 }
 
